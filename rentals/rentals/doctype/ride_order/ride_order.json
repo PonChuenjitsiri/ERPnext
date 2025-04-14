@@ -9,9 +9,11 @@
   "customer_name",
   "contact_number",
   "pickup_time",
+  "vehicle",
   "column_break_qqkc",
   "status",
-  "pickup_address"
+  "pickup_address",
+  "location"
  ],
  "fields": [
   {
@@ -52,12 +54,23 @@
    "in_list_view": 1,
    "label": "Pickup Address",
    "reqd": 1
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-15 02:58:27.418886",
+ "modified": "2025-04-15 03:47:40.782425",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Ride Order",

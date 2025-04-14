@@ -6,13 +6,13 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "title",
   "make",
   "year",
   "color",
   "column_break_asvf",
   "model",
-  "license_plate",
-  "read_only_works"
+  "license_plate"
  ],
  "fields": [
   {
@@ -52,16 +52,16 @@
    "label": "License Plate"
   },
   {
-   "default": "my_read_only_values",
-   "fieldname": "read_only_works",
-   "fieldtype": "Read Only",
-   "label": "Read Only Works"
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-15 01:54:20.139442",
+ "modified": "2025-04-15 03:37:21.200607",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -82,7 +82,9 @@
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "title"
 }
