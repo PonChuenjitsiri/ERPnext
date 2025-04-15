@@ -67,7 +67,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-15 01:58:06.379239",
+ "modified": "2025-04-15 04:07:00.048756",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Driver",
@@ -88,6 +88,7 @@
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

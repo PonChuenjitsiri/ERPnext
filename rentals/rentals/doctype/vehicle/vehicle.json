@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_import": 1,
  "autoname": "autoincrement",
  "creation": "2025-04-13 06:02:09.529311",
@@ -12,7 +13,10 @@
   "color",
   "column_break_asvf",
   "model",
-  "license_plate"
+  "license_plate",
+  "is_publish",
+  "route",
+  "image"
  ],
  "fields": [
   {
@@ -56,12 +60,30 @@
    "fieldtype": "Data",
    "label": "Title",
    "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_publish",
+   "fieldtype": "Check",
+   "label": "is Publish"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
   }
  ],
  "grid_page_length": 50,
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_publish",
  "links": [],
- "modified": "2025-04-15 03:37:21.200607",
+ "modified": "2025-04-16 02:02:47.967538",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -81,6 +103,7 @@
    "write": 1
   }
  ],
+ "route": "vehicles",
  "row_format": "Dynamic",
  "show_title_field_in_link": 1,
  "sort_field": "modified",
